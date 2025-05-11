@@ -1,4 +1,5 @@
 # Project 1 : FastAPI Request Method Logic
+
 from fastapi import Body, FastAPI
 
 app = FastAPI()
@@ -11,6 +12,10 @@ BOOKS = [
     {'title': 'Title Five', 'author': 'Author Five', 'category': 'math'},
     {'title': 'Title Six', 'author': 'Author Two', 'category': 'math'},
 ]
+
+# CRUD (Create, Read, Update Delete)
+# HTTP Request (Post, Get, Put, Delete)
+
 @app.get("/books")
 async def read_all_books():
     return BOOKS
